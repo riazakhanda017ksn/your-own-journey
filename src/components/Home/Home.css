@@ -1,0 +1,14 @@
+.text-center.mb-5.text-primary h1 {
+    color: #FFF;
+    padding: 30px 20px;
+    border-radius: 19px;
+}
+@media only screen and (max-device-width: 788px){
+    .text-primary {
+        color: #007bff!important;
+     
+    }
+    .text-center.mb-5.text-primary h1 {
+        font-size: 20px;
+    }
+}

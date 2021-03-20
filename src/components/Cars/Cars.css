@@ -1,0 +1,37 @@
+.display-inline {
+    width: 25%;
+    display: inline-block;
+    top: 11px;
+    cursor:pointer
+}
+element.style {
+    width: 10rem;
+    height: 270px;
+    padding-top: 50px;
+   
+}
+.card-part.m-3 img {
+    height: 100px;
+}
+@media only screen and (max-device-width: 728px) {
+    .display-inline {
+        width: 100%;
+        display: inline-block;
+        top: 11px;
+        cursor: pointer;
+        position: relative;
+        left: 159px;
+    }
+
+}
+@media only screen and (max-device-width: 740px) {
+    .display-inline {
+        width: 100%;
+        display: inline-block;
+        top: 11px;
+        cursor: pointer;
+        position: relative;
+        left: 159px;
+    }
+
+}

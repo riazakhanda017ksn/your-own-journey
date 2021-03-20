@@ -1,0 +1,240 @@
+
+body{background: url(juan-encalada-6mcVaoGNz1w-unsplash.jpg) ;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+
+    .form-section.mt-5.ml-auto {
+        border: 1px solid #59575f82;
+        padding: 50px;
+        margin-bottom: 130px;
+        border-radius: 6px;
+        background: #0000002b;
+        color: #FFF!Important;
+        box-shadow: 0px -1px 10px #f8f9fa57;
+    }
+
+button.mr-2 {
+    margin: 10px 0;
+    padding: 4px 13px;
+    font-weight: 500;
+    background: #FFF;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    position: relative;
+    bottom: 21px;
+  }
+  button.mr-4 {
+    margin: 10px 0;
+    padding: 4px 13px;
+    font-weight: 500;
+    background: #FFF;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    position: relative;
+    bottom: 21px;
+  }
+  input.form-control.extra-btn {
+    position: relative;
+    bottom: 18px;
+    margin-top: 5px;
+  }
+  input.form-control.inputExtra {
+    position: relative;
+    bottom: 5px;
+  }
+  p.button-edit.text-center {
+    background: #4248f9;
+    color: #FFF;
+    font-size: 12px;
+    padding: 9px 0;
+    cursor: pointer;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  input.form-control.edit.mr-2.edit-checkbox {
+    position: relative;
+    bottom: 53px;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .text-center.something button {
+    margin-left: 6px;
+    padding: 6px 26px;
+    border: none;
+    font-size: 13px;
+    font-weight: 400;
+    background: #3565d2;
+    color: #FFF;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  /* .form-section.mt-5.ml-auto {
+    border: 2px solid #DDD;
+    padding: 50px;
+    margin-bottom: 130px;
+    border-radius: 6px;
+  
+  } */
+  .form-section.mt-5.ml-auto input {
+    border: none;
+    border-bottom: 1px solid #33303078;
+    outline: none;
+  }
+  input.form-control.extra-btn {
+    background: #6274df;
+    color: #FFF;
+    border: none!important;
+  }
+  .text-center.something label {
+    margin-right: 7px;
+    display: inline-block;
+    font-size: 13px;
+  }
+  .logIn-button span {
+    color: #ff8d00;
+    width: 38px;
+    height: 38px;
+    background: #DDD;
+    padding: 10px;
+    display: inline-block;
+    line-height: 16px;
+    border-radius: 50%;
+    position: relative;
+    right: 188px;
+  }
+  span.facebook {
+    width: 38px;
+    height: 38px;
+    background: #3445bd;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    right: 187px;
+    font-size: 22px;
+    color: #FFF;
+    text-align: center;
+    padding-left: 8px;
+    padding-top: 8px;
+  }
+  span.github {
+    width: 38px;
+    height: 38px;
+    background: #19191a;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    right: 187px;
+    font-size: 22px;
+    color: #FFF;
+    text-align: center;
+    padding-left: 8px;
+    padding-top: 8px;
+  }
+  
+  .logIn-button {
+    border: 1px solid #DDD;
+    margin: 5px 0;
+    border-radius: 23px;
+   
+  }
+  .logIn-button button {
+    margin-left: 42%;
+    border: none;
+    background: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #767676;
+    cursor: pointer;
+    
+  }
+  .extra-edit {
+    background: #ffffffbf;
+}
+@media only screen and (max-device-width: 682px) {
+  .logIn-button button {
+    margin-left: 42%;
+    border: none;
+    background: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #767676;
+    cursor: pointer;
+}
+.logIn-button span {
+  position: relative;
+  right: 176px;
+}
+
+}
+@media only screen and (max-device-width: 758px) {
+  .logIn-button button {
+    margin-left: 42%;
+    border: none;
+    background: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #767676;
+    cursor: pointer;
+}
+.logIn-button span {
+  position: relative;
+  right: 176px;
+}
+
+}
+@media only screen and (max-device-width: 520px) {
+  .logIn-button button {
+    margin-left: 42%;
+    border: none;
+    background: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #767676;
+    cursor: pointer;
+}
+.logIn-button span {
+  position: relative;
+  right: 168px;
+}
+
+}
+@media only screen and (max-device-width: 574px) {
+  .logIn-button button {
+    margin-left: 42%;
+    border: none;
+    background: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #767676;
+    cursor: pointer;
+}
+.logIn-button span {
+  position: relative;
+  right: 190px;
+}
+
+}
+@media only screen and (max-device-width: 566px) {
+  .logIn-button button {
+    margin-left: 42%;
+    border: none;
+    background: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #767676;
+    cursor: pointer;
+}
+.logIn-button span {
+  position: relative;
+  right: 186px;
+}
+
+}
