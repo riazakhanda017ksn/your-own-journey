@@ -1,12 +1,118 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-
+import './Destination.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCar } from '@fortawesome/free-solid-svg-icons'
+import { faUser } from '@fortawesome/free-regular-svg-icons';
 const Destination = () => {
-    const {travelTo}=useParams()
+    const { travelTo } = useParams();
+    const [search, setSearch] = useState(false)
+    const [data, setData] = useState([])
+    useEffect(() => {
+        const url = 'https://api.mocki.io/v1/735d5585'
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setData(data))
+    }, [0])
+
+    const searchResult = data.find(data => data.travelTo == travelTo);
+    console.log(searchResult);
+    const handleSearchClick = () => {
+        setSearch(true)
+    }
     return (
         <div>
-            <h1 className='text-light'>hello lorem </h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque fugit delectus recusandae totam odio. Perferendis blanditiis corporis maxime quaerat necessitatibus voluptates natus esse fugiat neque quos numquam rem, consectetur distinctio expedita rerum, suscipit iusto eveniet? Tempore quos, eum quae beatae provident ipsam, omnis quia suscipit, fugit eveniet quaerat quam hic. Veritatis, impedit dolorum quasi soluta et minima, dolor reprehenderit at voluptatum consequatur dolore adipisci fugit rerum similique sapiente culpa quod provident pariatur praesentium voluptas consectetur deserunt? Voluptas, velit eius! Voluptas unde iure debitis voluptatibus tempore sed, soluta minima delectus nobis, pariatur a perspiciatis ratione! Et blanditiis nisi omnis ducimus. Tempore iure architecto iusto, repellat velit quod at eius nobis ad, eaque ex modi eos veritatis quos explicabo aliquam recusandae est, eveniet facilis alias provident magni natus beatae non. Perferendis, sapiente consequuntur? Adipisci, quas. Cumque suscipit impedit amet, beatae vel aliquid labore deleniti cupiditate alias repellendus dicta, atque dolores soluta? Aliquid deserunt repudiandae expedita rem omnis adipisci laborum libero accusamus distinctio laudantium. Iusto dolorum eaque commodi molestiae odit ratione voluptates magnam assumenda porro laborum placeat quae fugit quasi, illum corporis quas mollitia aperiam nostrum molestias dolor minus? Odit neque ducimus, animi corrupti quaerat sunt. Alias ratione fugit accusantium hic expedita blanditiis aperiam omnis dolores debitis veritatis quos delectus tempora nulla eligendi quisquam labore earum, minus architecto eos? Voluptates earum eligendi reiciendis id illum, quis illo aut quisquam. Quidem at aperiam a hic dicta quos laudantium beatae dolor. Veritatis facilis veniam totam sunt odit quibusdam blanditiis eligendi quidem maiores, suscipit eum quam consectetur illo ut deleniti nihil sapiente quo architecto. Ex ipsum molestiae accusamus quos? Repellendus quasi illo porro incidunt ipsam aliquam rem beatae nobis nihil assumenda quaerat, minus saepe nisi eum, corrupti accusamus odit iusto! Vitae necessitatibus ipsum magni culpa, rem, cumque cum aliquid repellendus dolores nostrum nulla suscipit praesentium voluptatem assumenda iusto tenetur perferendis sint amet quo veniam accusantium obcaecati minus error fuga. Distinctio minima cum quod mollitia exercitationem expedita maiores libero dolor ab eaque, aliquid magni consectetur, atque, modi maxime harum sapiente! Autem voluptate sed asperiores et molestias enim explicabo facere tempore totam necessitatibus unde non minus quasi veritatis similique nihil porro dicta, iste soluta. Atque dolorem odit adipisci possimus vel totam id a? Repudiandae explicabo illum suscipit eos, commodi soluta minus aspernatur. Soluta sapiente nam sit, vero sint officiis odit voluptatem cum corrupti earum, ea debitis unde. Enim tenetur provident rem in quidem repudiandae ipsam. Laboriosam non natus aspernatur delectus labore explicabo saepe ad, deserunt quis assumenda quam harum mollitia! Perspiciatis rerum, ipsa non quisquam, magnam pariatur minima ducimus exercitationem modi, maxime doloribus harum cupiditate eligendi sed magni quo! Vero veritatis nesciunt reiciendis aut nisi distinctio praesentium omnis quibusdam, eum expedita numquam, incidunt deleniti ducimus maiores quidem sit laboriosam nulla. Reprehenderit ipsum ea earum maiores praesentium, dolor quam nostrum vitae molestias reiciendis nemo quis eveniet vel omnis corporis quae excepturi. Architecto, eligendi alias id, minima consectetur necessitatibus et illum tempora facilis repellat, accusamus eius asperiores excepturi rerum voluptatum aut molestias autem debitis corporis? Fuga doloremque eos commodi ratione, nobis laboriosam neque nisi architecto consequatur laborum at provident. Doloremque, magni amet? Consectetur earum omnis nemo. Repellendus error sapiente cum rem incidunt, eum, doloribus suscipit iste, provident voluptate magni. Vero facilis iste accusamus fugiat animi repellendus nostrum delectus voluptatibus ipsum, earum aspernatur quas atque! Quasi incidunt maiores fugit soluta suscipit, mollitia animi dicta, voluptate quae aliquam distinctio. Mollitia explicabo inventore porro eum, quidem necessitatibus reprehenderit sunt repellat, sit, nam ullam repudiandae. Dignissimos et asperiores, iusto voluptate dolorum aperiam. Mollitia numquam nostrum officiis consequatur consectetur adipisci cupiditate hic impedit dolor dolorum ab quo modi pariatur porro, vel quaerat sed. Libero id recusandae aliquid accusantium consectetur incidunt necessitatibus ad architecto, temporibus animi exercitationem, sit labore quis. Laboriosam quas non, optio labore eos quo cumque quia distinctio. Temporibus enim suscipit nesciunt aut at distinctio. Voluptatibus maiores veritatis neque. Delectus minus, eveniet, fugit laborum hic labore voluptatum illum vel assumenda quia, enim at repellat sequi similique autem consequatur eum inventore architecto doloremque? Nesciunt eius molestiae a ex excepturi pariatur odio non deserunt aut nam repudiandae atque illum consequuntur voluptate iure, fugiat repellat velit! Enim facere natus repellat, perferendis unde adipisci sed cumque rerum veritatis tempore ipsum fugiat atque molestias quis consequatur assumenda, nobis nihil laborum corrupti. Quisquam facere aut nisi quos vel molestiae laboriosam corrupti adipisci numquam. Laudantium, temporibus nostrum repellat soluta provident modi neque quam sequi non maxime numquam dicta placeat quaerat maiores, id tempora quidem iste nobis dolorum et itaque officiis corporis! Dolorem aliquid ipsam ab nisi assumenda nostrum sunt mollitia maxime unde harum culpa voluptatem eaque error expedita saepe dolore blanditiis, optio ea officiis cumque eius a quia commodi. Cum aliquid rerum amet beatae alias laudantium, quod quos nisi? Voluptatem distinctio neque id saepe vitae nesciunt, maxime possimus quia blanditiis sapiente molestiae, aliquam hic illum nam dolores, laudantium voluptas dolorum explicabo! A nesciunt magni omnis mollitia vitae? Doloribus reprehenderit atque enim quos consequatur laboriosam unde voluptas eligendi facere! Quod laborum autem repellendus nemo. Labore praesentium, ut architecto dicta a illo quis molestias qui, necessitatibus quas eligendi blanditiis. Placeat asperiores quisquam officiis quis quaerat incidunt qui alias, eaque, omnis totam dolor vel iusto inventore culpa, fugit distinctio autem harum illum? Culpa perferendis nobis reiciendis ab fuga et iusto officia odio laboriosam alias. Commodi est accusantium nemo iusto officia, fugiat molestiae nam fugit? Dolor accusantium reprehenderit quibusdam maxime minima, laborum earum enim optio atque doloribus voluptate quia dicta exercitationem eos quam, placeat adipisci odio consectetur nobis beatae labore inventore facere? Nihil distinctio illum, enim aspernatur dolores reprehenderit sit et animi facere dolore modi temporibus. Laborum voluptate a vero numquam rem voluptatum quas odit delectus aspernatur temporibus assumenda ullam sapiente nesciunt cupiditate aliquam quos dignissimos aperiam enim impedit, explicabo ducimus? Voluptates facilis facere molestiae sit eos inventore dolorem, reiciendis sint iusto. In explicabo placeat, distinctio facilis ipsa cumque, consectetur aliquid deserunt aliquam quae facere autem non temporibus laudantium rem hic molestiae iusto! Provident ipsam accusamus ducimus, tenetur excepturi eos libero blanditiis esse dicta deserunt velit possimus. Nihil doloremque accusamus maiores recusandae earum, repellendus tempore.</p>
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-5">
+                        <div className="form-section mt-5">
+                            {travelTo ? search ? 
+                            <div className="main-background">
+                            <div className="destination-heading">
+                                <div className="coloring-bg">
+                                <h5>Cumilla</h5>
+                                <h5>Dhaka</h5>
+                                </div>
+                            <div className="background-item">
+                            <div className='flex-item'>
+                                <div className="img-div">
+                                <img src={searchResult.images} alt=""/>
+                                </div>
+                                <div className="person-div">
+                                    <span><FontAwesomeIcon icon={faUser} /> </span> <span className='ml-1'> {searchResult.travelTo}   </span>
+                                </div>
+                                 <div className="heading-div">
+                                 <strong>{searchResult.name}</strong>
+                                 </div>
+                                 <div className="amount">
+                                     <strong> $ {searchResult.price}</strong>
+                                 </div>
+                            </div>
+                            </div> 
+                            <div className="background-item mt-3">
+                            <div className='flex-item'>
+                                <div className="img-div">
+                                <img src={searchResult.images} alt=""/>
+                                </div>
+                                <div className="person-div">
+                                    <span><FontAwesomeIcon icon={faUser} /> </span> <span className='ml-1'> {searchResult.travelTo}   </span>
+                                </div>
+                                 <div className="heading-div">
+                                 <strong>{searchResult.name}</strong>
+                                 </div>
+                                 <div className="amount">
+                                     <strong> $ {searchResult.price}</strong>
+                                 </div>
+                            </div>
+                            </div> 
+                            <div className="background-item mt-3">
+                            <div className='flex-item'>
+                                <div className="img-div">
+                                <img src={searchResult.images} alt=""/>
+                                </div>
+                                <div className="person-div">
+                                    <span><FontAwesomeIcon icon={faUser} /> </span> <span className='ml-1'> {searchResult.travelTo}   </span>
+                                </div>
+                                 <div className="heading-div">
+                                 <strong>{searchResult.name}</strong>
+                                 </div>
+                                 <div className="amount">
+                                     <strong> $ {searchResult.price}</strong>
+                                 </div>
+                            </div>
+                            </div> 
+                            </div>
+                            </div>:
+                                <div className='background'>
+                                    <h6 className='text-light mb-4'>Find Your own Destination</h6>
+                                    <form action="">
+                                        <input type="text" className='form-control mt-2' placeholder='Cumilla' name="" id="" />
+                                        <input type="text" className='form-control mt-3' name="" placeholder='Dhaka' id="" />
+                                        <input type="submit" onClick={handleSearchClick} className='form-control mt-3' value="Search" />
+
+                                    </form>
+                                    </div> : search ? <div>
+                                     <h2>hello world</h2>
+                                     </div> : <div>
+                                     <form action="">
+                                    <input type="text" className='form-control mt-2' placeholder='Cumilla' name="" id="" />
+                                    <input type="text" className='form-control mt-3' name="" placeholder='Dhaka' id="" />
+                                    <input type="submit" onClick={handleSearchClick} className='form-control mt-3' value="Search" />
+
+                                </form>
+                            </div>}
+                        </div>
+
+                    </div>
+                    <div className="col-lg-7 ">
+                        <div className="iframe-part mt-5">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14529.920850985389!2d90.77410692216641!3d24.434119184081982!2m3!1f0!2f0!3f0!3m2!
+                              1i1024!2i768!4f13.1!3m3!1m2!1s0x3756918773180af5%3A0x530a9427210ef003!2sKishoreganj!5e0!3m2!1sen!2sbd!4v1616183548045!5m2!1sen!2sbd"
+                                width="500px" height="600px" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

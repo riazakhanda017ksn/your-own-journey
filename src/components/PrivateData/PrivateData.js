@@ -13,7 +13,7 @@ const PrivateData = ({ children, ...rest }) => {
           ) : (
             <Redirect
               to={{
-                pathname: "/logIn",
+                pathname: "/login",
                 state: { from: location }
               }}
             />

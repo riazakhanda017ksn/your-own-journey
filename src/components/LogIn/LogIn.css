@@ -11,9 +11,15 @@ body{background: url(juan-encalada-6mcVaoGNz1w-unsplash.jpg) ;
         margin-bottom: 130px;
         border-radius: 6px;
         background: #0000002b;
-        color: #FFF!Important;
+        color: #FFF!important;
         box-shadow: 0px -1px 10px #f8f9fa57;
     }
+    strong.color {
+      font-size: 12px;
+      font-weight: 500;
+     
+  }
+
 
 button.mr-2 {
     margin: 10px 0;

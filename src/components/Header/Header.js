@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Button, Form, FormControl, Nav, Navbar } from 'react-bootstrap';
+import {  Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -19,7 +19,7 @@ const Header = () => {
                             <Link to='/home'>Home</Link>
                         </li>
                         <li>
-                            <Link to='/logIn'>Destination</Link>
+                            <Link to='/destination'>Destination</Link>
                         </li>
                         <li>
                             <Link to='/logIn'>Blog</Link>
@@ -28,12 +28,16 @@ const Header = () => {
                             <Link to='/logIn'>Contact</Link>
                         </li>
                         <li>
-                            <Link to='/logIn'>Sing In</Link>
+                            <Link to='/logIn' onClick={()=>setLoggedInUser({})}>
+                                        Sing Out
+                                </Link>
                         </li>
+                       
                         <li>
-                            <Link to='/logIn'><button onClick={()=>setLoggedInUser({})}>Log Out</button> </Link>
+                        {loggedInUser.name ? <h5>{loggedInUser.name}</h5> : <Link to='/logIn'><button>Sing In </button> </Link> }
+                            
                         </li>
-                        <li className='userName'> <p>{loggedInUser.name} </p>  </li>
+                        <li className='userName'> <p> </p>  </li>
                     </ul>
                 </Nav>
             </Navbar>

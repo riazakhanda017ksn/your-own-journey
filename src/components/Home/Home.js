@@ -6,12 +6,12 @@ import './Home.css'
 const Home = () => {
     const [riders, SetRider] = useState([])
     useEffect(() => {
-        const url = 'https://api.mocki.io/v1/82a57428'
+        const url = 'https://api.mocki.io/v1/735d5585'
         fetch(url)
             .then(res => res.json())
             .then(data => SetRider(data))
 
-    }, [0])
+    },[])
     return (
         <div>
             <div className="container mt-5">

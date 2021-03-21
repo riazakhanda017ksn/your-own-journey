@@ -1,13 +1,6 @@
-[{
-  "name": "BIKE",
-  "images": "https://i.ibb.co/LR5kyxh/bike.png"
-}, {
-  "name": "CAR",
-  "images": "https://i.ibb.co/5F1XgfX/car-civik.png"
-}, {
-  "name": "BUS",
-  "images": "https://i.ibb.co/RYBfkLz/bus1.png"
-}, {
-  "name": "TRAIN",
-  "images": "https://i.ibb.co/M1C2qjy/train.png"
-}]
+[
+  { "travelTo": 1,  "price" : 60,  "name":"BIKE","images":"https://i.ibb.co/LR5kyxh/bike.png"},
+  { "travelTo": 2,   "price" : 70,  "name":"CAR","images":"https://i.ibb.co/5F1XgfX/car-civik.png"},
+  {  "travelTo": 3,  "price" : 50,   "name":"BUS","images":"https://i.ibb.co/RYBfkLz/bus1.png"},
+  {  "travelTo": 4,   "price" : 40,     "name":"TRAIN","images":"https://i.ibb.co/M1C2qjy/train.png"}
+  ]

@@ -18,6 +18,9 @@ function App() {
       <Router>
       <Header/>
         <Switch>
+          <Route exact path="/home">
+          <Home/>
+          </Route>
           <Route path="/home">
           <Home/>
           </Route>
@@ -25,6 +28,9 @@ function App() {
           <LogIn/>
           </Route>
           <PrivateData path="/cars/:travelTo">
+           <Destination/>
+          </PrivateData>
+          <PrivateData path="/destination">
            <Destination/>
           </PrivateData>
         </Switch>
